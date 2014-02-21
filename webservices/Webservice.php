@@ -133,7 +133,6 @@ namespace simple_webservices {
             curl_setopt($curl_handle, CURLOPT_URL, $this->getBaseUrl() . $endpoint);
             curl_setopt($curl_handle, CURLOPT_CONNECTTIMEOUT, $this->getTimeout());
             curl_setopt($curl_handle, CURLOPT_FOLLOWLOCATION, true);
-            curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, true);
             curl_setopt($curl_handle, CURLOPT_USERAGENT, "Simple-Webservices v" . self::$VERSION . " <https://github.com/mapkyca/simple-webservices>; " . $this->getUserAgent());
             curl_setopt($curl_handle, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($curl_handle, CURLOPT_SSL_VERIFYPEER, 1);
