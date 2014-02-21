@@ -13,10 +13,10 @@ Create your web service endpoint, specifying the base url.
 
 ```php
 
-    require_once('simple_webservice/Webservice.php');
-    require_once('simple_webservice/JSONWebservice.php');
+    require_once('Webservice.php');
+    require_once('JSONWebservice.php');
 
-    $json = new JSONWebservice('https://example.com/rest/');
+    $json = new \simple_webservice\JSONWebservice('https://example.com/rest/');
 
     $result = $json->get('path/to/query', ['param1' => 'foo', 'param2' => 'bar']);
 
