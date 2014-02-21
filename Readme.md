@@ -1,5 +1,5 @@
-Simple Webservice
-=================
+Simple PHP Web service library
+==============================
 
 This is a simple web services call library (essentially a wrapper around CURL),
 but because I essentially had to keep cutting and pasting the same code about I
