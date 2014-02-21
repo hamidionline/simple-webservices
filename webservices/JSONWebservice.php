@@ -16,7 +16,8 @@ namespace simple_webservices {
     class JSONWebservice extends Webservice {
         
         public function __construct(
-        $base_url
+        $base_url,
+        $timeout = 5
         ) {
             parent::__construct($base_url);
         }

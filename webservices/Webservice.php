@@ -30,9 +30,11 @@ namespace simple_webservices {
          * Create a web services object
          */
         public function __construct(
-        $base_url
+        $base_url,
+        $timeout = 5
         ) {
             $this->setBaseUrl($base_url);
+            $this->setTimeout($timeout);
         }
 
         /**
