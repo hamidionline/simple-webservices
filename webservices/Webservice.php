@@ -152,7 +152,7 @@ namespace simple_webservices {
 
             curl_close($curl_handle);
 
-            return ['content' => $buffer, 'response' => $this->last_http_status];
+            return ['content' => $buffer, 'status' => $this->last_http_status];
         }
 
         /**

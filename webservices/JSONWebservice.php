@@ -34,7 +34,7 @@ namespace simple_webservices {
             
             $json = json_decode($response['content']);
             if (!$json)
-                throw new WebserviceException("Webservices response doesn't appear to be JSON");
+                throw new WebserviceException("Webservices response doesn't appear to be JSON (status code: {$response['status']})");
             
             return $json;
         }
